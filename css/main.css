@@ -1,0 +1,231 @@
+body{
+    margin: 0;
+    font-family: 'Galdeano', Candara, sans-serif, Helvetica, Arial;
+}
+
+footer{
+    height: 10vh;
+    width: 100%;
+
+    background-color: #161A1D;
+    color: #fff;
+
+    position: relative;
+}
+  
+.dropdown {
+    position: absolute;
+    
+    top: 1vh;
+    left: 1vw;
+
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #161A1D;
+    color: #fff;
+
+    width: 10vw;
+    height: 5vh;
+
+    padding: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    font-size: 100%;
+    font-family: 'Galdeano', Candara, sans-serif, Helvetica, Arial;
+    border: none;
+    cursor: pointer;
+}
+  
+.dropbtn:hover{
+    background-color: #fff;
+    color: #161A1D;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+
+    left: 0;
+    background-color: #3636369d;
+    min-width: 25vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    background-color: #161A1D;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: #fff;
+    color: #161A1D;
+}
+  
+.show {
+    display:block;
+}
+
+.bar{
+    display: none;
+}
+
+nav{
+    text-align: center;
+    background-color: #660708;
+    color: #fff;
+}
+
+nav img{
+    display: none;
+    width: 80%;
+    padding-top: 10%;
+    padding-left: 1%;
+}
+
+nav a{
+    text-decoration: none;
+    display: block;
+
+    transition: all ease-in 500ms;
+}
+
+.active{
+    background-color: #fff;
+    color: #161A1D
+}
+
+.fa-linkedin-in, .fa-github, .fa-envelope, .footer-text{
+    color: white;
+    position: absolute;
+}
+
+.fa-linkedin-in{
+    bottom: 1vh;
+    right: 4vw;
+} 
+
+.fa-github{
+    bottom: 1vh;
+    right: 12vw;
+} 
+
+.fa-envelope{
+    bottom: 1vh;
+    right: 20vw;
+}
+
+.footer-text{
+    bottom: -2vh;
+    left: 1vh;
+}
+
+#Title{
+    font-size: 200%;
+    padding-bottom: 4%;
+    padding-top: 1%;
+    margin: 0%;
+    margin-left: 5vh;
+}
+
+#heading{
+    font-size: 250%;
+    padding-left: 1%;
+    text-align: center;
+}
+
+@media screen and (min-width: 800px){
+    .bar{
+        display: block;
+    }
+
+    .dropdown{
+        display: none;
+    }
+
+    nav{
+        text-align: left;
+        width: 20%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    nav img{
+        display: block;
+    }
+
+    nav h1{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    nav a{
+        display: block;
+        padding: 5%;
+        font-size: 150%;
+        background-color: #161A1D;
+        color: #fff;
+        border-radius: 10px 10px 10px 10px;
+        margin-bottom: 4%;
+    }
+
+    nav a:hover{
+        font-size: 200%;
+    }
+    
+    .left{
+        float: left;
+    }
+    
+    .right{
+        display: inline-block;
+        width: 78%;
+    }
+    
+    #Title{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .fa-linkedin-in{
+        bottom: 1vh;
+        right: 1vw;
+    } 
+    
+    .fa-github{
+        bottom: 1vh;
+        right: 4vw;
+    } 
+    
+    .fa-envelope{
+        bottom: 1vh;
+        right: 7vw;
+    }
+
+    .footer-text{
+        bottom: -.5vh;
+        left: 1vh;
+    }
+    
+    #Title{
+        font-size: 250%;
+        padding-left: 0%;
+    }
+
+    .main{
+        min-height: 100vh;
+        margin-bottom: -10vh;
+    }
+    
+    .main:after{
+        content: "";
+        display: block;
+        height: 10vh;
+    }
+}
