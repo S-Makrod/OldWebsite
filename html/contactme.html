@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Saad Makrod Portfolio - Home</title>
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/contactme.css">
+	<script src = "../javascript/main.js"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+	<link rel="icon" href="..\images\Logo.png">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galdeano&display=swap" rel="stylesheet">
+</head>
+<body>
+	<main>
+		<nav class = "left">
+			<img src="..\images\Logo.png">
+
+			<h1 id = "Title">Saad Makrod Portfolio</h1>
+
+			<div class = "dropdown">
+				<button onclick="dropDown()" class="dropbtn">Menu</button>
+  				<div id="myDropdown" class="dropdown-content">
+    				<a href="../index.html">Home</a>
+					<a href="about.html">About</a>
+					<a href="projects.html">Projects</a>
+					<a href="contactme.html" class = "active">Contact Me</a>
+  				</div>
+			</div>
+
+			<a href="../index.html" class = "bar">Home</a>
+			<a href="about.html" class="bar">About</a>
+			<a href="projects.html" class="bar">Projects</a>
+			<a href="contactme.html" class="bar active">Contact Me</a>
+
+		</nav>
+		<section class = "right">
+			<h1 id = "heading">Contact Me</h1>
+            <p>You can reach out to me directly the old fashioned way through my email or feel free to fill out this form!</p>
+
+            <form action="https://formsubmit.co/saad.makrod@gmail.com" method="POST">
+                <div class = "top"> 
+                    <input type="text" name="name" required placeholder="Your Name";>
+                    <input type="email" name="email" required placeholder="Your Email";>
+                </div>
+                <div class = "middle">
+                    <textarea name="message" required placeholder="Your Message";></textarea>
+                </div>
+                <div class = "bottom">
+                    <button type="submit" id = "submit">Submit Form</button>
+                </div>
+           </form>
+
+		</section>
+	</main>
+
+	<footer>
+		<p class = "footer-text">&copy Saad Makrod 2021</p>
+		<a href="https://www.linkedin.com/in/saad-makrod/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
+		<a href="https://github.com/S-Makrod" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+		<a href="mailto:saad.makrod@gmail.com" target="_blank"><i class="far fa-envelope fa-lg"></i></a>		
+	</footer>
+
+</body>
+</html>
