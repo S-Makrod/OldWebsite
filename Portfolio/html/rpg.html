@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Saad Makrod Portfolio - RPG Game</title>
+
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/project.css">
+    <script src = "../javascript/imageCarousel.js"></script>
+    <script src = "../javascript/main.js"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+	<link rel="icon" href="..\images\Logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galdeano&display=swap" rel="stylesheet">
+</head>
+<body>
+	<main>
+		<nav class = "left" id = "rpgNav">
+			<img src="..\images\Logo.png">
+
+			<h1 id = "Title">Saad Makrod Portfolio</h1>
+
+			<div class = "dropdown">
+				<button onclick="dropDown()" class="dropbtn">Menu</button>
+  				<div id="myDropdown" class="dropdown-content">
+    				<a href="index.html">Home</a>
+					<a href="about.html">About</a>
+					<a href="projects.html" class = "active">Projects</a>
+					<a href="contactme.html">Contact Me</a>
+  				</div>
+			</div>
+
+			<a href="index.html" class = "bar">Home</a>
+			<a href="about.html" class="bar">About</a>
+			<a href="projects.html" class="bar active">Projects</a>
+			<a href="contactme.html" class="bar">Contact Me</a>
+		</nav>
+		<section class = "right">
+			<h1 id = "heading">RPG Game</h1>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AtqMJYB5bns" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <h2>The Development Journey</h2>
+
+            <p>
+                When I began to make this project in June 2020 I first researched about what components I needed to implement 
+                this game properly. I took the time to decide on what characteristics should my player have (sword slashes and
+                magic), how the monsters would operate, and if I wanted to implement a boss monster. I also found all my resources
+                before beginnig to code, for example I edited my pictures using Gimp and choose background music from 
+                <a href="https://www.bensound.com" target="_blank">Bensound</a>. After coming up with a plan for what I wanted to 
+                build, I started to decide how I would implement the code. I broke my code into classes to promote encapsulation
+                and readability of my code. After implementing these classes I created the interface for my GUI and implemented timers and the
+                keyListener class. Finally once I was satisfied with the ability my program had to interact with the user I began
+                testing the program and ultimately completed the game.                
+            </p>
+
+            <h2>Remarks</h2>
+
+            <p>
+                Looking back at this game now after maturing my Java coding skills I do see a lot that could have been done differently
+                to make the code cleaner. Although this was a good way to cement my understanding of Java OOP if I wrote this code today
+                I would do it differently. For example I would implement a Singleton design pattern for the Player since I only have one 
+                instance of the player during the game. I would also extract the monsters from the Map class just like I did with the BossMonster 
+                class and then I would implement the factory design pattern. The factory pattern would make the monster spawnning much cleaner.
+                I would also consider taking out the powerups (lives, swords, magic) and implementing them with the factory design pattern as well.
+                Using these design patterns would make my code much more readable and it would improve the quality of my RPG game.
+            </p>
+
+            <div class="arrow first" onmouseover = "reveal()" onmouseout = "hide()" onclick = "back()">
+                <i id = "left" class="fas fa-arrow-left fa-3x"></i>
+            </div>
+            <div class = "imageCarousel" onmouseover = "reveal()" onmouseout = "hide()">
+                <img id= "one" class = "current" src="../images/rpg.jpg" alt="A picture of the rpg game">
+                <img id= "two" src="../images/rpg2.jpg" alt="A picture of the rpg game">
+                <img id= "three" src="../images/rpg3.jpg" alt="A picture of the rpg game">
+                <img id= "four" src="../images/rpg4.jpg" alt="A picture of the rpg game">
+            </div>
+            <div class="arrow" onmouseover = "reveal()" onmouseout = "hide()" onclick = "next()"> 
+                <i  id = "right" class="fas fa-arrow-right fa-3x"></i>
+            </div>
+		</section>
+	</main>
+
+	<footer>
+		<p class = "footer-text">&copy Saad Makrod 2021</p>
+		<a href="https://www.linkedin.com/in/saad-makrod/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
+		<a href="https://github.com/S-Makrod" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+		<a href="mailto:saad.makrod@gmail.com" target="_blank"><i class="far fa-envelope fa-lg"></i></a>		
+	</footer>
+
+</body>
+</html>
