@@ -1,0 +1,109 @@
+#About, #Certifications, #ContactInfo, #Education{
+    background: #fff;
+
+    padding: 1%;
+
+    margin: 5vh;
+
+    transition: box-shadow 0.3s ease-in-out 0s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    animation: slideInFromBottom ease 3s;
+}
+
+#About:hover, #Certifications:hover, #ContactInfo:hover, #Education:hover{
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+div h2{
+    text-align: center;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+img{
+    width: 30%;
+    padding-left: 35%;
+}
+
+div a{
+    color: #161A1D;
+    transition: all ease-in 500ms;
+}
+
+div a:hover{
+    color: #660708;
+    font-size: 120%;
+}
+
+#resume{
+    text-decoration: none;
+    text-align: center;
+
+    display: inline-block;
+    background-color: #161A1D;
+
+    font-size: 100%;
+    color: #fff;
+
+    padding: 2%;
+    border-radius: 10px 10px 10px 10px;
+
+    margin-bottom: 1%;
+    margin-left: 32%;
+
+    transition: all ease-in 500ms;
+}
+
+#resume:hover{
+    background-color: #660708;
+}
+
+@media screen and (min-width: 800px){
+    #resume{
+        margin-left: 32vw;
+    }
+}
+
+@media screen and (min-width: 1240px){
+    #About, #Certifications, #ContactInfo, #Education{
+        margin-top: 5%;
+        margin-right: 5%;
+    }
+
+    #container{
+        transition: none;
+        box-shadow: none;
+        animation: none;
+        background-color: none;
+    
+        margin-left: 6%;
+        margin-right: 6%;
+    
+        display: inline-block;
+    }
+
+    #About{
+        margin-right: 11%;
+        margin-left: 6%;
+    }
+    
+    #Education, #ContactInfo{
+        margin-left: 0%;
+    }
+    
+    #Certifications{
+        display: inline-block;
+        
+        position: relative;
+        margin-bottom: 3%;
+        margin-left: 9%;
+    }
+}
