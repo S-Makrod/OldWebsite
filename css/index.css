@@ -1,0 +1,74 @@
+#WelcomeImageSection{
+    background-image: url("../images/Background.jpg");
+    background-size: cover;
+    
+    animation: fadeInAnimation ease-in 3s;
+
+    width: 100%;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+#WelcomeImageSection img{
+    width: 60%;
+    padding-left: 20%;
+    padding-top: 3%;
+}
+
+#WelcomeBodySection{
+    background: #fff;
+    text-align: center;
+
+    margin: 5vh;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    transition: box-shadow 0.3s ease-in-out 0s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    animation: slideInFromBottom ease 3s;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+#WelcomeBodySection:hover{
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+h1{
+    font-size: 250%;
+}
+
+p{
+    font-size: 100%;
+}
+
+section{
+    min-height: 83.5vh;
+}
+
+@media screen and (min-width: 800px){
+    #WelcomBodySection{
+        margin: 5vh 5vh 5vh 8vh;
+        height: 20vh;
+        width: 90%;
+    }
+
+    #WelcomeImageSection{
+        height: 90vh;
+    }
+}
