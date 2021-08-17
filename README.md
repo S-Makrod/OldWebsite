@@ -1,13 +1,16 @@
 # S-Makrod.github.io
 
-# Website Link and Demo
+## Necessary Software
+I used visual studio code and the live server extension to make this project but if you download it you can view it in any browser by typing in the file path to index.html in the URL bar.
+
+## Website Link and Demo
 The website is fully viewable at https://s-makrod.github.io/. 
 
 There is a website demo at https://youtu.be/CJtdBpHY1XA.
 
 Note that I update the website whenever I have time so the video may appear different then the current website. Visit monthly to see new updates!
 
-# Description
+## Description
 I made this website to complete the "Web Design for Everybody Specialization" on Coursera, I can say with confidence that I am comfortable with HTML and CSS after building this website. It is made totally from scratch without any frameworks.
 
 Features Implemented
@@ -17,7 +20,7 @@ Features Implemented
 - Welcome greeting using JavaScript
 - Image Carousel using JavaScript
 
-# Pictures
+## Pictures
 
 <img src= "https://user-images.githubusercontent.com/53048085/129653293-9432936a-2f23-45f2-b499-c5180e528b30.png"/>
 
@@ -35,7 +38,7 @@ Features Implemented
 
 <img src= "https://user-images.githubusercontent.com/53048085/129653751-ee5d55a2-7097-4dce-9394-7825e80256d2.png"/>
 
-# Remarks
+## Remarks
 
 Looking back at when I made this website I think a lot could have been done differently. For example, the design could have been simplified so that the responsive layout would be easier to implement. Making a few small changes would have led to a cleaner, easier to implement website but this did give me a solid foundation in HTML and CSS.
 
