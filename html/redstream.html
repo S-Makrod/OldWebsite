@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Saad Makrod Portfolio - Deck GUI</title>
+
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/project.css">
+    <script src = "../javascript/imageCarousel.js"></script>
+    <script src = "../javascript/main.js"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+	<link rel="icon" href="../images/Logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<main class="main">
+		<nav id="nav">
+			<h1 id = "Title">Saad Makrod Portfolio</h1>
+
+			<div class = "dropdown">
+				<button onclick="dropDown()" class="dropbtn">Menu</button>
+  				<div id="myDropdown" class="dropdown-content">
+    				<a href="../index.html">Home</a>
+					<a href="about.html">About</a>
+					<a href="projects.html" class = "active">Projects</a>
+					<a href="contactme.html">Contact Me</a>
+  				</div>
+			</div>
+
+			<a href="../index.html" class = "bar">Home</a>
+			<a href="about.html" class="bar">About</a>
+			<a href="projects.html" class="bar active">Projects</a>
+			<a href="contactme.html" class="bar">Contact Me</a>
+
+		</nav>
+		<section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Q6O_1jH5Khk" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <h2>The Development Journey</h2>
+            
+            <p>
+                This is a spaceship game coded with Assembly, I call it "Red Stream". It was used for the final assignment in 
+                CSCB58 at the University of Toronto and was recognized as one of the best projects in the semester. The final 
+                mark for this project 106.67%. <br><br>
+
+                In the game you are the fighter jet which is named "Red Stream" and your goal is to survive an endless onslaught 
+                of asteroids. As the game progresses you encounter pickups such as the life and bonus points. The game increases 
+                in difficulty as it continues by increasing the speed of the asteroids and reducing spawning of the pickups. <br><br>
+
+                The following features were implemented:
+                <ul>
+                    <li>Increasing Diffuculty</li>
+                    <li>Health and bonus points pickup</li>
+                    <li>Score system</li>
+                    <li>Health bar</li>
+                    <li>Smooth graphics (done by redrawing parts of the asteroids instead of the full asteroid)</li>
+                    <li>Welcome and Game Over screens</li>
+                    <li>Collisions show in place of contact instead of one generic location</li>
+                </ul>
+            </p>
+            <p>
+                For more info and instructions on how to play please visit the <a href="https://github.com/S-Makrod/RedStream/blob/main/README.md" target="_blank">GitHub README</a>.
+            </p>            
+            
+            <div id="container">
+                <div onmouseover = "reveal()" onmouseout = "hide()" onclick = "back('redstream.html')">
+                    <i id = "left" class="fas fa-arrow-left fa-3x"></i>
+                </div>
+                <div class = "imageCarousel" onmouseover = "reveal()" onmouseout = "hide()">
+                    <img id= "one" class = "current" src="../images/redstream.png" alt="A picture of the app">
+                </div>
+                <div onmouseover = "reveal()" onmouseout = "hide()" onclick = "next('redstream.html')"> 
+                    <i  id = "right" class="fas fa-arrow-right fa-3x"></i>
+                </div>
+            </div>
+		</section>
+	</main>
+
+	<footer>
+		<p class = "footer-text">&copy; Saad Makrod 2021</p>
+		<a href="https://www.linkedin.com/in/saad-makrod/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
+		<a href="https://github.com/S-Makrod" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+		<a href="mailto:saad.makrod@gmail.com" target="_blank"><i class="far fa-envelope fa-lg"></i></a>		
+	</footer>
+
+</body>
+</html>
