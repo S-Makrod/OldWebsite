@@ -1,0 +1,215 @@
+html body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    font-family: Lato, Candara, sans-serif, Helvetica, Arial;
+}
+
+footer{
+    height: 10vh;
+    width: 100%;
+
+    background-color: #161A1D;
+    color: #fff;
+
+    position: absolute;
+}
+
+.dropdown {
+    position: absolute;
+    
+    top: 1vh;
+    left: 1vw;
+
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #660708;
+    color: #fff;
+
+    width: 15vw;
+    height: 5vh;
+
+    font-size: 100%;
+    font-family: Lato, Candara, sans-serif, Helvetica, Arial;
+    border: none;
+    cursor: pointer;
+}
+  
+.dropbtn:hover{
+    background-color: #fff;
+    color: #161A1D;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+
+    left: 0;
+    min-width: 25vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    background-color: #660708;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: #fff;
+    color: #161A1D;
+}
+  
+.show {
+    display:block;
+}
+
+.bar{
+    display: none;
+}
+
+nav{
+    text-align: center;
+    background-color: #161A1D;
+    color: #fff;
+}
+
+nav a{
+    text-decoration: none;
+    display: block;
+
+    transition: all ease-in 500ms;
+}
+
+.active{
+    background-color: #fff;
+    color: #660708;
+}
+
+.fa-linkedin-in, .fa-github, .fa-envelope, .footer-text{
+    color: white;
+    position: absolute;
+}
+
+.fa-linkedin-in{
+    bottom: 1vh;
+    right: 4vw;
+} 
+
+.fa-github{
+    bottom: 1vh;
+    right: 12vw;
+} 
+
+.fa-envelope{
+    bottom: 1vh;
+    right: 20vw;
+}
+
+.footer-text{
+    bottom: -2vh;
+    left: 1vh;
+}
+
+#Title{
+    font-size: 150%;
+    padding-bottom: 4%;
+    padding-top: 1%;
+    margin: 0%;
+    margin-top: 2%;
+    margin-left: 5vh;
+
+    display: inline-block;
+}
+
+.main{
+    min-height: 100vh;
+    margin-bottom: -10vh;
+}
+
+.main:after{
+    content: "";
+    display: block;
+    height: 10vh;
+}
+
+@media screen and (min-width: 800px){
+    .bar{
+        display: inline-block;
+    }
+
+    .dropdown{
+        display: none;
+    }
+
+    nav{
+        text-align: center;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    nav a{
+        display: inline-block;
+        font-size: 100%;
+        background-color: #660708;
+        color: #fff;
+        border-radius: 10px 10px 10px 10px;
+        padding: 1%;
+        width: 15%;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 1%;
+        margin-top: 0%;
+    }
+
+    nav a:hover{
+        font-size: 125%;
+    }
+
+    .active{
+        font-size: 125%;
+    }
+    
+    #Title{
+        margin: 0%;
+        font-family: Lato, sans-serif, Helvetica, Arial;
+        display: block;
+        font-size: 200%;
+        padding-left: 0%;
+        padding-bottom: 2%;
+    }
+
+    .fa-linkedin-in{
+        bottom: 1vh;
+        right: 1vw;
+    } 
+    
+    .fa-github{
+        bottom: 1vh;
+        right: 4vw;
+    } 
+    
+    .fa-envelope{
+        bottom: 1vh;
+        right: 7vw;
+    }
+
+    .footer-text{
+        bottom: -.5vh;
+        left: 1vh;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    nav a{
+        width: 10%;
+    }
+}
