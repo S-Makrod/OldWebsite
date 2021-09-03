@@ -25,7 +25,7 @@ Features Implemented
 ![image](https://user-images.githubusercontent.com/53048085/131513996-3661eb87-acb0-473f-b7e4-d2a8c5ce2f77.png)
 ![image](https://user-images.githubusercontent.com/53048085/131513422-ad6b85f0-d5f0-4704-a486-e72cc1e1120e.png)
 
-# Old Website
+## Old Website
 I have updated my website here are some pictures of the original website. Here is a link to a demo of the old website: https://youtu.be/CJtdBpHY1XA.
 
 <img src= "https://user-images.githubusercontent.com/53048085/129653293-9432936a-2f23-45f2-b499-c5180e528b30.png"/>
@@ -43,10 +43,4 @@ I have updated my website here are some pictures of the original website. Here i
 <img src= "https://user-images.githubusercontent.com/53048085/129653684-fd9147d5-5ef0-4501-8205-2594111b2b4f.png"/>
 
 <img src= "https://user-images.githubusercontent.com/53048085/129653751-ee5d55a2-7097-4dce-9394-7825e80256d2.png"/>
-
-## Remarks on Old Website
-
-Looking back at when I made this website I think a lot could have been done differently. For example, the design could have been simplified so that the responsive layout would be easier to implement. Making a few small changes would have led to a cleaner, easier to implement website but this did give me a solid foundation in HTML and CSS.
-
-I decided to take the time to implement these changes, I researched more on element placement and I was able to make my CSS much cleaner, overall I am happy with the change.
 
