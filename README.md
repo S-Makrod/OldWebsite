@@ -7,7 +7,7 @@ I used visual studio code and the live server extension to make this project but
 The website is fully viewable at https://s-makrod.github.io/. 
 
 ## Description
-I made this website to complete the "Web Design for Everybody Specialization" on Coursera, I can say with confidence that I am comfortable with HTML and CSS after building this website. It is made totally from scratch without any frameworks.
+I made this portfolio website to document all my side projects in one location as well as work on my web design skills, I can say with confidence that I am comfortable with HTML and CSS after building this website. It is made totally from scratch without any frameworks.
 
 Features Implemented
 - Responsive design thorugh CSS Media Queries
