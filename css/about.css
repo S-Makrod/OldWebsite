@@ -1,0 +1,99 @@
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+#About, #Certifications{
+    background: #fff;
+    border: solid 2px #161A1D;
+
+    padding: 2%;
+
+    margin: 4vh;
+
+    transition: box-shadow 0.3s ease-in-out 0s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    animation: fadeInAnimation ease 3s;
+}
+
+#About:hover, #Certifications:hover{
+    color: #660708;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+    border: solid 2px #660708;
+}
+
+div h2{
+    text-align: center;
+}
+
+div a{
+    color: #161A1D;
+    transition: all ease-in 500ms;
+}
+
+div a:hover{
+    color: #660708;
+}
+
+#resume{
+    text-decoration: none;
+    text-align: center;
+
+    display: inline-block;
+    background-color: #161A1D;
+
+    font-size: 100%;
+    color: #fff;
+
+    padding: 1%;
+    border-radius: 10px 10px 10px 10px;
+
+    margin: 2%;
+
+    transition: all ease-in 500ms;
+}
+
+#resume:hover{
+    background-color: #660708;
+}
+
+#resume-div{
+    text-align: center;
+}
+
+.skills{
+    text-align: center;
+}
+
+span{
+    display: inline-block;
+    background-color: #e7e5e7;
+    padding: 0.5%;
+    margin: 1%;
+    font-size: 100%;
+    min-width: 5%;
+    border-radius: 10px;
+    border: solid 2px #161A1D;
+}
+
+span:hover{
+    border: solid 2px #660708;
+}
+
+@media screen and (min-width: 1000px){
+    #About, #Certifications{
+        display: inline-block;
+        width: 40%;
+        font-size: 90%;
+    }
+
+    #container {
+        display: flex;
+        justify-content: center;
+    }    
+}
