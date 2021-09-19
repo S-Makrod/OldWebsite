@@ -1,0 +1,85 @@
+#container, #toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}    
+
+#toggle{
+    margin-bottom: 1vh;
+    cursor: pointer;
+}
+
+iframe{
+    display: block;
+    margin: 1% auto;
+    width: 50%;
+    height: 40vh;
+}
+
+p,h2{
+    padding-left: 2%;
+}
+
+div{
+    display: inline-block;
+}
+
+section a {
+    color: #161A1D;
+}
+
+section a:hover{
+    color: #660708;
+}
+
+.imageCarousel{
+    margin: 3%;
+    margin-bottom: 1vh;
+}
+
+.imageCarousel img{
+    border: 3px solid #161A1D;
+    height: 30vh;
+    width: 55vw;
+}
+
+.imageCarousel img:hover{
+    border: 3px solid #660708;
+}
+
+.app img{
+    height: 35vh;
+    width: 35vw;
+}
+
+#left, #right{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 400px){
+    .app img{
+        height: 35vh;
+        width: 25vw;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .imageCarousel{
+        margin: 2%;
+        margin-bottom: 1vh;
+    }
+
+    .imageCarousel img{
+        height: 40vh;
+        width: 40vw;
+    }
+
+    .app img{
+        height: 40vh;
+        width: 15vw;
+    }
+
+    .conway img{
+        width: 27vw;
+    }
+}

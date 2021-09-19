@@ -1,0 +1,97 @@
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.project{
+    background: #fff;
+    border: solid 2px #161A1D;
+
+    padding: 3%;
+
+    margin: 2vh;
+    height: 30vh;
+
+    transition: box-shadow 0.3s ease-in-out 0s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    animation: fadeInAnimation ease 3s;
+}
+
+.project:hover{
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+    border: solid 2px #660708;
+}
+
+.project h2{
+    text-align: center;
+}
+
+.project h2:hover{
+    color: #660708;
+}
+
+.project img{
+    height: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+a{
+    color: #161A1D;
+    text-decoration: none;
+}
+
+p{
+    padding-left: 2%;
+}
+
+@media screen and (min-width: 800px){
+    .project{
+        display: inline-block;
+        width: 40vw;
+        height: 20vh;
+    }
+
+    .project img{
+        height: 50%;
+    }
+
+    .double {
+        display: flex;
+        justify-content: center;
+    }   
+}
+
+
+@media screen and (min-width: 1000px){
+    .double {
+        justify-content: unset;
+    }
+
+    .project{
+        display: inline-block;
+        width: 20vw;
+        height: 25vh;
+    }
+
+    .project img{
+        height: 50%;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }   
+}
+
+@media screen and (min-width: 1300px){
+    .project img{
+        height: 60%;
+    }
+}
