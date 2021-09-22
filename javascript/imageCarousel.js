@@ -142,5 +142,5 @@ document.getElementById("right-arrow").addEventListener("click", next);
 
 document.getElementById("toggle").addEventListener("click", toggle);
 
-var image_carousel_run = setInterval(next, 4000);
+var image_carousel_run = setInterval(next, 3000);
 var fade_counter = 1;
