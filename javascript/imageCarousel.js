@@ -100,7 +100,7 @@ function fadeOut(img){
     console.log(fade_counter != 0);
     if(fade_counter > 0){
         setTimeout(function(){
-            document.getElementById("one").style.opacity = String(fade_counter);
+            document.getElementById("one").style.opacity = fade_counter.toString();
             fade_counter -= 0.1;
             fadeOut(img);
         }, 50)
@@ -112,7 +112,7 @@ function fadeOut(img){
 
 function fadeIn(){
     setTimeout(function(){
-        document.getElementById("one").style.opacity = String(fade_counter);
+        document.getElementById("one").style.opacity = fade_counter.toString();
         if(fade_counter < 1){
             fade_counter += 0.1;
             fadeIn();
@@ -128,7 +128,7 @@ function toggle(){
         toggler.classList.add("fa-play-circle");
         clearInterval(image_carousel_run);
         fade_counter = 1;
-        document.getElementById("one").style.opacity = String(fade_counter);
+        document.getElementById("one").style.opacity = fade_counter.toString();
     } else {
         toggler.classList.remove("fa-play-circle");
         toggler.classList.add("fa-pause-circle");
